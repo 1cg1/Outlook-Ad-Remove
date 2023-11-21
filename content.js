@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var divToRemove = document.getElementsByClassName("GssDD");
-    if (divToRemove) {
-      divToRemove.parentNode.removeChild(divToRemove);
-    }
+  var divsToRemove = document.getElementsByClassName('classNameToRemove');
+  var divsArray = Array.from(divsToRemove);
+  divsArray.forEach(function (div) {
+    div.parentNode.removeChild(div);
   });
+});
