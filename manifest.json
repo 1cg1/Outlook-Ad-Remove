@@ -6,7 +6,7 @@
     "permissions": ["activeTab"],
   
     "content_scripts": [{
-      "matches": ["*outlook.live.com/mail/*"],
+      "matches": ["*://outlook.live.com/mail/*"],
       "js": ["content.js"]
     }]
   }
