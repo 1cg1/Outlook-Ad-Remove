@@ -1,0 +1,12 @@
+{
+    "name": "Outlook Ad Remover",
+    "version": "1.0",
+    "description": "Removes Ad Pane in Outlook Web.",
+    "manifest_version": 3,
+    "permissions": ["activeTab"],
+  
+    "content_scripts": [{
+      "matches": ["*://outlook.live.com/mail/*"],
+      "js": ["content.js"]
+    }]
+  }
