@@ -4,11 +4,6 @@
     "description": "Removes Ad Pane in Outlook Web.",
     "manifest_version": 3,
     "permissions": ["activeTab"],
-    "update_url": "",
-  
-    "background": {
-      "service_worker": "background.js"
-    },
   
     "content_scripts": [{
       "matches": ["*outlook.live.com/mail/*"],
